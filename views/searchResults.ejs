@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container-flex">
+    <div class="row mx-auto" >
+    <h1><%= title %> <br />
+        by <%= authorName %> <br />
+        was written in <%= publicationDate %>.</h1>
+    
+    <p class="user">Hover on the books to reveal the opening line.</p>
+</div>
+</div>
+
+    <div class="container-fluid">
+         <div class="row">
+        <div class="col p-3 mb-2">
+            <div class="card mx-auto">
+                <p><%= firstSentence %></p> 
+            </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col p-3 mb-2">
+        <a class="user" href="/">Click here to go back and try another year.</p>
+      </div>
+    </div>     
+    </div>
+</div>
+    <%- include("partials/footer.ejs") %>

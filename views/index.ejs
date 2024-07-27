@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container-flex">
+  <div class="row mx-auto">
+    <h1>
+      Find an <span class="adventure">adventure</span> book that was written in
+      the year that you were born.
+    </h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col p-3 mb-2">
+      <div class="firstCard mx-auto"></div>
+    </div>
+
+    <div class="col p-3 mb-2">
+      <form action="/submit" method="post">
+        <label for="first_publish_year" class="question"
+          >What year were you born?</label
+        >
+        <input
+          type="number"
+          class="baseText"
+          id="first_publish_year"
+          name="first_publish_year"
+          placeholder="YYYY"
+          min="1925"
+          max="2023"
+        />
+        <input type="submit" class="btn btn-primary baseText" value="FIND" />
+      </form>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer.ejs") %>
